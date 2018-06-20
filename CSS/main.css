@@ -18,11 +18,12 @@ body{
 .suggestionTitle {
     border: thin solid black;
     font-family: 'Gloria Halelujah', cursive;
-
+    text-align: center;
 }
 
 .imgSuggestionBox {
     border: thin solid black;
+    height: 300px;
 }
 
 .suggestions {
