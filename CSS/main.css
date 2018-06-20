@@ -1,0 +1,19 @@
+html {
+    background-color: greenyellow;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.suggestionTitle {
+    border: thin solid black;
+    font-family: 'Gloria Halelujah', cursive;
+}
+
+.suggestions {
+    border: thin solid black;
+}
