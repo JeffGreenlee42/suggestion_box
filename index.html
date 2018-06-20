@@ -7,11 +7,11 @@
         <script type="text/javascript" src="js/vendor/angular.min.js"></script>
     </head>
     <body ng-app="SuggestionBox" >
-        <h1> {{ helloWorld }} </h1>
 
         <div class="main" ng-controller="HomeController">
             <div class="suggestionTitle">
                 <h1>Suggestions</h1>
+                <img src="https://www.aspcapro.org/sites/default/files/suggestion%20box%202.PNG" alt="Home-Made Suggestion Box" class="imgSuggestionBox">
             </div>
             <div class="suggestions" ng-repeat="post in posts | orderBy:'+title'">
                 <p class="">{{post.title}}</p>

@@ -1,5 +1,9 @@
 html {
-    background-color: greenyellow;
+    background-color: rgba(184, 163, 73, 0.883);
+}
+
+body{
+    background-color: inherit;
 }
 
 .main {
@@ -7,11 +11,18 @@ html {
     flex-direction: column;
     align-items: center;
 
+
 }
+
 
 .suggestionTitle {
     border: thin solid black;
     font-family: 'Gloria Halelujah', cursive;
+
+}
+
+.imgSuggestionBox {
+    border: thin solid black;
 }
 
 .suggestions {
