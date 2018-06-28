@@ -1,1 +1,1 @@
-var app = angular.module('SuggestionBox', []);
+var app = angular.module('SuggestionBox', ['ngRoute']);
