@@ -5,11 +5,11 @@ app.config(function ($routeProvider) {
         controller: 'HomeController',
         templateUrl: 'views/home.html'
       })
-    //   .when('/outbox/:id', {
-    //       controller: 'EmailController',
-    //       templateUrl: 'views/email.html'
-    //   })
-    //   .otherwise({
-    //     redirectTo: '/outbox'
-    //   });
+      .when('/suggestion/:id', {
+          controller: 'SuggestionController',
+          templateUrl: 'views/suggestion.html'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
   });
