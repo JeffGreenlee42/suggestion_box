@@ -1,7 +1,7 @@
 var app = angular.module('SuggestionBox', ['ngRoute']);
 app.config(function ($routeProvider) {
   $routeProvider
-      .when('/', {
+      .when('/home', {
         controller: 'HomeController',
         templateUrl: 'views/home.html'
       })
@@ -10,7 +10,7 @@ app.config(function ($routeProvider) {
           templateUrl: 'views/suggestion.html'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/home'
       });
   });
   app.config(['$locationProvider', function($locationProvider) {
