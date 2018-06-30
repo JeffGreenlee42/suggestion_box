@@ -4,7 +4,7 @@ posts: [
 {
 title: 'Free pizza at club meetings',
 upvotes: 15,
-comments: [],
+comments: "Yo! No Anchovies!",
 },
 {
 title: 'End all club emails with Laffy Taffy jokes',
@@ -14,7 +14,7 @@ comments: [],
 {
 title: 'Retrofit water fountain with Gatorade',
 upvotes: 7,
-comments: [],
+comments: "Electrolytes!",
 },
 {
 title: 'Sing Bon Jovi\'s "Living on a Prayer" halfway through meetings',

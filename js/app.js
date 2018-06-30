@@ -1,6 +1,6 @@
 var app = angular.module('SuggestionBox', ['ngRoute']);
 app.config(function ($routeProvider) {
-    $routeProvider
+  $routeProvider
       .when('/', {
         controller: 'HomeController',
         templateUrl: 'views/home.html'
@@ -13,3 +13,6 @@ app.config(function ($routeProvider) {
         redirectTo: '/'
       });
   });
+  app.config(['$locationProvider', function($locationProvider) {
+    $locationProvider.hashPrefix('');
+  }]);
