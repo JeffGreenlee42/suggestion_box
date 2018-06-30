@@ -1,8 +1,8 @@
 
 <!-- <a class="button back" href="#/">Back</a> -->
 
-<div class="main" ng-controller="SuggestionController">
-    <h2 class="">{{suggestion.title}}</h2>
+<div>
+    <h2 class="suggestion">{{suggestion.comment}}</h2>
     <form ng-submit="addComment()" style="margin-top: 50px">
         <h3> Submit Your comment </h3>
         <div class="form-group">
@@ -11,8 +11,7 @@
         </div>
     </form>
     <div class="main" ng-repeat="comment in comments | orderBy: '-upvotes'">
-        <p>Hello World!</p>
-        <p class="">{{comment.body}}</p>
+        <p class="comment">{{comment.body}}</p>
         <p class="upvotes">
                 <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(comment, $index)"></span>{{comment.upvotes}}
         </p>
