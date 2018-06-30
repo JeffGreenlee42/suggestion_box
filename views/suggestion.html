@@ -6,13 +6,13 @@
         <h3> Submit Your comment </h3>
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Comment Here." ng-model="comment"></input>
-            <button type="submit" class="btn btn-primary">Suggest</button>
+            <button type="submit" class="btn btn-primary">Comment</button>
         </div>
     </form>
-    <div class="comments" ng-repeat="comment in suggestion.comments">
+    <div class="main" ng-repeat="comment in comments | orderBy: '-upvotes'">
         <p class="comment">{{comment.body}}</p>
         <p class="upvotes">
-                <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(comment)"></span>{{comment.upvotes}}
+                <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(comment, $index)"></span>{{comment.upvotes}}
         </p>
     </div>
 </div>
