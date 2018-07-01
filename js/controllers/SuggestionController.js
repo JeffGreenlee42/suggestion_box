@@ -4,6 +4,7 @@ app.controller('SuggestionController',
     'suggestions',
      function($scope, $routeParams, suggestions) {
     $scope.post = suggestions.posts[$routeParams.id];
+    $scope.title = $scope.post.comments.title;
     $scope.addComment = function() {
         // If input is empty, quit function
         if(!$scope.comment || $scope.comment === '') {
@@ -18,9 +19,9 @@ app.controller('SuggestionController',
         //Clear the field after submit
         $scope.comment = '';
     };
-    $scope.upVote = function() {
-        $scope.post.comments.upvotes += 1;
+    $scope.upVote = function(comment) {
+        comment.upvotes += 1;
         console.log("Number of upvotes: ");
-        console.log($scope.post.comments.upvotes);
+        console.log(comment.upvotes);
     };
   }])

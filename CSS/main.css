@@ -28,7 +28,7 @@ body{
 .form-group {
     width: auto;
     border-width: 3px;
-    width=50%;
+    width: 50%;
     align-content: center;
 }
 
@@ -78,5 +78,5 @@ body{
 }
 
 .collectedSuggestions {
-    background-color: blueviolet
+    background-color: blueviolet;
 }
