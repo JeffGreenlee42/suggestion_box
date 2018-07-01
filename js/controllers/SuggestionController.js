@@ -17,9 +17,10 @@ app.controller('SuggestionController',
 
         //Clear the field after submit
         $scope.comment = '';
-
-        $scope.upVote = function() {
-            $scope.post.upvotes += 1;
-        };
+    };
+    $scope.upVote = function() {
+        $scope.post.comments.upvotes += 1;
+        console.log("Number of upvotes: ");
+        console.log($scope.post.comments.upvotes);
     };
   }])

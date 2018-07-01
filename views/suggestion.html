@@ -1,20 +1,25 @@
 
 <!-- <a class="button back" href="#/">Back</a> -->
 
-<div>
-    <h2 class="suggestion">{{suggestion.comment}}</h2>
-    <form ng-submit="addComment()" style="margin-top: 50px">
-        <h3> Submit Your comment </h3>
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Comment Here." ng-model="comment"></input>
-            <button type="submit" class="btn btn-primary">Comment</button>
+<div class="comments">
+    <div class=formEntry>
+        <h2 class="">{{suggestion.comment}}</h2>
+        <form ng-submit="addComment()" style="margin-top: 50px">
+            <h3 class="commentTitle"> Submit Your comment </h3>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Comment Here." ng-model="comment"></input>
+                <button type="submit" class="btn btn-primary">Comment</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="collectedComments">
+        <div class="comments" ng-repeat="comment in post.comments | orderBy: '-upvotes'">
+            <p class="comment">{{comment.body}}</p>
+            <p class="upvotes">
+                <span class="glyphicon glyphicon-plus-sign" ng-click="this.upVote()">{{comment.upvotes}}</span>
+            </p>
         </div>
-    </form>
-    <div class="main" ng-repeat="comment in post.comments | orderBy: '-upvotes'">
-        <p class="comment">{{comment.body}}</p>
-        <p class="upvotes">
-                <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(comment, $index)"></span>{{comment.upvotes}}
-        </p>
     </div>
 </div>
 

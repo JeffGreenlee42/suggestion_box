@@ -1,0 +1,19 @@
+{
+  "name": "suggestion_box",
+  "version": "1.0.0",
+  "description": "Suggestion Box Exercise for Codecademy course \"Learing AngularJS 1.X\"  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffGreenlee42/suggestion_box.git"
+  },
+  "author": "Jeff Greenlee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeffGreenlee42/suggestion_box/issues"
+  },
+  "homepage": "https://github.com/JeffGreenlee42/suggestion_box#readme"
+}
