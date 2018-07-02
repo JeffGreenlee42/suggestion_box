@@ -1,6 +1,7 @@
 
 <!-- <a class="button back" href="#/">Back</a> -->
 
+<<<<<<< HEAD
 <div class="comments">
     <div class=formEntry>
         <h2 class="">{{$post.title}}</h2>
@@ -19,6 +20,21 @@
         <p class="comment">{{comment.body}}</p>
         <p class="upvotes">
             <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(comment)">{{comment.upvotes}}</span>
+=======
+<div>
+    <h2 class="suggestion">{{suggestion.comment}}</h2>
+    <form ng-submit="addComment()" style="margin-top: 50px">
+        <h3> Submit Your comment </h3>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Comment Here." ng-model="comment"></input>
+            <button type="submit" class="btn btn-primary">Comment</button>
+        </div>
+    </form>
+    <div class="main" ng-repeat="comment in post.comments | orderBy: '-upvotes'">
+        <p class="comment">{{comment.body}}</p>
+        <p class="upvotes">
+                <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(comment, $index)"></span>{{comment.upvotes}}
+>>>>>>> parent of 9257052... Problem with upvotes in array
         </p>
     </div>
 </div>
