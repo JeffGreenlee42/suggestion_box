@@ -10,15 +10,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: inherit;
 }
 
-.suggestions {
-    font-size: 1.5em;
-    background-color: cornflowerblue;
-    font-family: 'Shadows Into Light', cursive;
-}
-
-.suggestionTitle {
+.suggestionTitle .commentTitle {
+    width: 100%;
     margin-bottom: 3em;
     margin-top: 2em;
     font-family: 'Gloria Halelujah', cursive;
@@ -30,10 +26,72 @@ body{
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+    width: auto;
+    border-width: 3px;
+    align-content: center;
 }
 
 .suggestions {
     border: thin solid black;
+    font-size: 1.7em;
+    background-color: cornflowerblue;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-kerning: normal;
+    margin-bottom: 10px;
+}
+
+.suggestions p:nth-child(1) {
+    margin-bottom: 1px;
+}
+
+.suggestions p:nth-child(2) {
+    font-size: 14px;
+}
+
+.suggestions p:nth-child(n+2) {
+    font-family: 'Courier New', Courier, monospace;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+.comment {
+    border: thin solid black;
+    background-color: cornflowerblue;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.commentTitle {
+    font-size: 3em;
+    /* align-self: center; */
+    /* border-color: black;
+    border-style: dashed; */
+    text-align: center;
+}
+.comments {
+    border: thin solid black;
+    font-size: 2 em;
+    background-color: rgba(184, 163, 73, 0.883);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 70%;
+}
+
+.formEntry {
+    text-align: center;
+    align-items: center;
+    border-width: 3px;
+    width: 70%;
+    padding-bottom: 5px;
+}
+
+.collectedSuggestions {
+    background-color: blueviolet
 }

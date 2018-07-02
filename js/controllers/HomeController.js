@@ -14,6 +14,7 @@ app.controller('HomeController',
             $scope.posts.push({
                 title: $scope.title,
                 upvotes: 0,
+                comments: [],
             });
             // after adding suggestion, Clear the input
             $scope.title = '';

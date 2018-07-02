@@ -1,0 +1,25 @@
+<div class="main" ng-controller="HomeController">
+        <div class="formEntry">
+            <div class="suggestionTitle">
+                <h1>Suggestions</h1>
+            </div>
+            <div class="">
+                <img src="../img/suggestionBox.png" alt="Home-Made Suggestion Box" class="imgSuggestionBox">
+            </div>
+            <form ng-submit="addSuggestion()" style="margin-top: 50px">
+                <h3> Submit Your Suggestion </h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Great ideas here" ng-model="title"></input>
+                    <button type="submit" class="btn btn-primary">Suggest</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="suggestions" ng-repeat="post in posts | orderBy:'-upvotes'">
+            <p class="">{{post.title}}</p>
+            <p>
+                <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span> Upvotes: {{post.upvotes}}
+            </p>
+            <p><a href="#/suggestion/{{$index}}">Comments</a></p>
+        </div>
+    </div>
