@@ -4,7 +4,7 @@ app.controller('SuggestionController',
     'suggestions',
      function($scope, $routeParams, suggestions) {
     $scope.post = suggestions.posts[$routeParams.id];
-    $scope.title = $scope.post.comments.title;
+    //$scope.title = $scope.post.comments.title;
     $scope.addComment = function() {
         // If input is empty, quit function
         if(!$scope.comment || $scope.comment === '') {
