@@ -2,7 +2,7 @@
 
 <div class="comments">
         <div class=formEntry>
-            <h2 class="">{{suggestion.comment}}</h2>
+            <h2 class="">{{title}}</h2>
             <form ng-submit="addComment()" style="margin-top: 50px">
                 <h3 class="commentTitle"> Submit Your comment </h3>
                 <div class="form-group">
@@ -12,12 +12,12 @@
             </form>
         </div>
 
-        <div class="collectedComments">
-            <div class="comments" ng-repeat="comment in post.comments | orderBy: '-upvotes'">
-                <p class="comment">{{comment.body}}</p>
-                <p class="upvotes">
-                    <span class="glyphicon glyphicon-plus-sign" ng-click="this.upVote()">{{comment.upvotes}}</span>
-                </p>
-            </div>
+</div>
+<div class="collectedComments">
+        <div class="comments" ng-repeat="comment in post.comments | orderBy: '-upvotes'">
+            <p class="comment">{{comment.body}}</p>
+            <p class="upvotes">
+                thums Up:<span class="glyphicon glyphicon-plus-sign" ng-click="this.upVote()">{{comment.upvotes}}</span>
+            </p>
         </div>
-    </div>
+</div>
